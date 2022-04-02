@@ -1,4 +1,4 @@
-package com.mustonal.movieinfo;
+package com.mustunal.movieinfo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

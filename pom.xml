@@ -8,7 +8,7 @@
 		<version>2.6.6</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.mustonal</groupId>
+	<groupId>com.mustunal</groupId>
 	<artifactId>movie-info</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>movie-info</name>

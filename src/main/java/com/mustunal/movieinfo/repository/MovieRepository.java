@@ -18,10 +18,6 @@ public class MovieRepository {
         initMovieMap();
     }
 
-    public List<Movie> getAllMovies(){
-        return new ArrayList<>(movieMap.values());
-    }
-
     private void initMovieMap() {
         Movie movie = new Movie(1,"Esaretin Bedeli");
         movieMap.put(movie.getName(),movie);
@@ -29,6 +25,10 @@ public class MovieRepository {
         movieMap.put(movie.getName(),movie);
         movie = new Movie(3,"Baba 2");
         movieMap.put(movie.getName(),movie);
+    }
+
+    public List<Movie> getAllMovies(){
+        return new ArrayList<>(movieMap.values());
     }
 
     public Movie getMovieByName(String name) {
@@ -48,4 +48,5 @@ public class MovieRepository {
 
         return  newMovie;
     }
+
 }

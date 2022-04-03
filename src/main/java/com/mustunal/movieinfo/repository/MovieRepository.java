@@ -19,11 +19,11 @@ public class MovieRepository {
     }
 
     private void initMovieMap() {
-        Movie movie = new Movie(1,"Esaretin Bedeli");
+        Movie movie = new Movie(1,"Esaretin Bedeli",1);
         movieMap.put(movie.getName(),movie);
-        movie = new Movie(2,"Dövüş Kulübü");
+        movie = new Movie(2,"Dövüş Kulübü",2);
         movieMap.put(movie.getName(),movie);
-        movie = new Movie(3,"Baba 2");
+        movie = new Movie(3,"Baba 2",3);
         movieMap.put(movie.getName(),movie);
     }
 
@@ -42,7 +42,7 @@ public class MovieRepository {
 
     public Movie addMovie(Movie movie) {
         long id = movieMap.size() + 1;
-        Movie newMovie = new Movie(id,movie.getName());
+        Movie newMovie = new Movie(id,movie.getName(), movie.getDirectorId());
 
         movieMap.put(newMovie.getName(),newMovie);
 
